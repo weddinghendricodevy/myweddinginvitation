@@ -161,7 +161,7 @@ body {
 
 .gallery {
     width: 90%;
-    height: 740px;
+    height: 720px;
     margin: auto;
     text-align: center;
     align-content: center;
@@ -170,21 +170,27 @@ body {
 
 
 .rekening-container {
+
     width: 90%;
-    height: 200px;
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: auto;
-    text-align: center;
-    align-content: center;
     align-items: center;
-    align-self: center;
+    background-color: #E9C46A;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
-.rekening-box {
-    width: 98%;
-    height: 150px;
-    margin: auto;
-    border-radius: 16px;
-    background-color: #E9C46A;    
+
+.rekening1{
+    width: 100%;
+    text-align: center;
 }
+.rekening2{
+    width: 100%;
+    text-align: center;
+}
+
 .bank-logo {
     width: 120px;
     height: 120px;
