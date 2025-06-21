@@ -1,0 +1,36 @@
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_cover.css">
+    <title>Hendrico & Devy</title>
+    
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="a">aaa</div>
+        <div class="b">bbb</div>
+        <div class="c">ccc</div>
+        <button id="unlockScrollBtn">Buka Undangan</button>
+        </div>
+
+        <div class="content1" id="content1">
+            <!-- Content 1 -->
+        </div>
+
+        <div class="content2">
+            <!-- Content 2 -->
+        </div>
+
+        <script>
+          // Disable scrolling initially
+          document.body.style.overflow = 'hidden';
+
+          document.getElementById('unlockScrollBtn').addEventListener('click', function() {
+            document.body.style.overflow = 'auto';
+            this.style.display = 'none';
+            document.getElementById('content1').scrollIntoView({ behavior: 'smooth' });
+          });
+        </script>  
+  </body>
+  </html>
