@@ -26,7 +26,6 @@ body {
     opacity: 0;
     transform: translateY(40px);
     animation: cover-fade-in 1.5s ease-out forwards;
-    padding-bottom: 120px;
 }
 
 @keyframes cover-fade-in {
@@ -37,19 +36,24 @@ body {
 }
 
 .fotocover {
-    padding-top:35px;
     width: 320px;
     height: 320px;
-    margin: auto;
-    border-radius: 8px;
+    margin: 40px auto;
 }
+
 
 .text-cover {
     width: 320px;
-    height: 150px;
-    margin: auto;
+    height: 500px;
+    margin: -120px auto;
     color: #E9C46A;
 
+}
+
+.bunga1 {
+    width: 180px;
+    position: absolute;
+    top:460px;
 }
 
 .pemberkatan {
@@ -66,16 +70,17 @@ body {
     height: 128px;
     animation: spin-y 6s linear infinite;
     transform-style: preserve-3d;
-}
 
-@keyframes spin-y {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(360deg);
-    }
+   
 }
+ @keyframes spin-y {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
 
 .resepsi {
     width: 90%;
@@ -145,7 +150,7 @@ body {
 
 .profile-devy{
     width: 240px;
-    padding-top: 80px;
+    padding-top: 120px;
     margin-bottom: -50px;
 }
 
@@ -207,7 +212,7 @@ body {
     margin-top: 20px;
     padding-bottom: 20px;
     font-size: 12px;
-    color: #E9C46A;
+    color: #E9C46A
 }
 
 
