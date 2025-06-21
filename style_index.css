@@ -147,11 +147,25 @@ body {
     width: 100%;
 }
 
+.opening{
+    width: 90%;
+    height: 75vh;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+.foto-opening{
+    width: 320px;
+}
+
 .fotocover {
     width: 320px;
     height: 320px;
     margin: 40px auto;
 }
+
 
 .text-cover {
     width: 320px;
@@ -229,7 +243,7 @@ body {
     height: 140px;
     position: absolute;
     right: 26px;
-    top: 3000px;
+    top: 3580px;
 }
 
 .flower2 {
@@ -237,7 +251,7 @@ body {
     height: 180px;
     position: absolute;
     left: 26px;
-    top: 3140px;
+    top: 3720px;
 }
 
 .flower3 {
@@ -245,7 +259,7 @@ body {
     height: 202px;
     position: absolute;
     right: -10px;
-    top: 3180px;
+    top: 3790px;
 }
 
 .profile {
@@ -253,7 +267,6 @@ body {
     height: 1280px;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
 }
 
 .profile-hendrico {
