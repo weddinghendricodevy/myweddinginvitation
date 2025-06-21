@@ -1,0 +1,32 @@
+  <!DOCTYPE html>
+  <html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style_index.css">
+    <title>Amplop dengan Surat di Dalam</title>
+    
+  </head>
+  <body>
+
+  <div class="envelope-wrapper" onclick="openEnvelope(this)">
+    <div class="envelope"></div>
+    <div class="flap"></div>
+    <div class="letter">You're Invited to The Wedding Hendrico and Devy</div>
+    
+  </div>
+  <h1 class="welcome">Touch to Open</h1>
+  <script>
+    function openEnvelope(el) {
+      if (!el.classList.contains("open")) {
+        el.classList.add("open");
+
+        // Redirect setelah animasi selesai
+        setTimeout(() => {
+          window.location.href = "undangan.html"; // Ganti dengan halaman tujuan
+        }, 2000); // Tambah waktu agar letter sempat muncul
+      }
+    }
+  </script>
+
+  </body>
+  </html>
