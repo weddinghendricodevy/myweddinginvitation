@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
 .lagu {
     position: fixed;
     top: 0;
@@ -40,31 +41,13 @@ body {
     width: 320px;
     height: 320px;
     margin: auto;
-    position: relative;
     border-radius: 8px;
 }
-.logocincin{
-    width: 90px;
-    height: 128px;
-    top: -110px;
-    position: relative;
-    animation: spin-y 6s linear infinite;
-    transform-style: preserve-3d;
-    }
 
-    @keyframes spin-y {
-        0% {
-            transform: rotateY(0deg);
-        }
-        100% {
-            transform: rotateY(360deg);
-        }
-}
 .text-cover {
     width: 320px;
     height: 150px;
     margin: auto;
-    position: relative;
     top: -130px;
     color: #E9C46A;
 
@@ -84,6 +67,14 @@ body {
     height: 128px;
     animation: spin-y 6s linear infinite;
     transform-style: preserve-3d;
+    @keyframes spin-y {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
 }
 
 .resepsi {
