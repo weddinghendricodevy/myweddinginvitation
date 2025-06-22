@@ -1,0 +1,390 @@
+body {
+    font-family: Arial, sans-serif;
+     
+}
+
+.cover {
+   background-image: url('assets/G4.JPG');
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: cover-fade-in 1.5s ease-out forwards;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes cover-fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #E9C46A;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    text-shadow: black 0px 0px 2px, black 0px 0px 10px, black 0px 0px 10px;
+}
+
+.envelope-wrapper {
+    position: relative;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 180px;
+    height: 120px;
+    cursor: pointer;
+    perspective: 1200px;
+    transform-origin: center;
+    transition: transform 1s ease;
+    box-shadow: 0 20px 20px rgba(0, 0.5, 0, 0.5);
+}
+
+
+.envelope-wrapper.open {
+    animation: zoomIn 1.5s forwards ease-in-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+    }
+}
+
+.envelope {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: wheat;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.envelope::before,
+.envelope::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background: white;
+    z-index: -1;
+}
+
+.envelope::before {
+    left: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 100%, 0% 100%);
+}
+
+.envelope::after {
+    right: 0;
+    clip-path: polygon(100% 0, 0% 50%, 0% 100%, 100% 100%);
+}
+
+.flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: wheat;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    transform-origin: top;
+    transition: transform 1s ease;
+    z-index: 1;
+}
+
+.open .flap {
+    transform: rotateX(180deg);
+}
+
+.letter {
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    top: 40%;
+    left: 5%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 1s ease;
+    z-index: 0;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.open .letter {
+    opacity: 1;
+    transform: translateY(-120%);
+    transition-delay: 0.7s;
+    z-index: 2;
+}
+
+.lagu {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+
+
+.container {
+    background-color: wheat;
+    width: 100%;
+}
+
+.welcome-gallery{
+    width: 90%;
+    height: 320px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wg1{
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/G8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.wg2{
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/G2.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.opening{
+    width: 90%;
+    height: 75vh;
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+.foto-opening{
+    width: 320px;
+}
+
+.fotocover {
+    width: 320px;
+    height: 320px;
+    margin: 40px auto;
+}
+
+
+.text-cover {
+    width: 320px;
+    height: 500px;
+    margin: -120px auto;
+    color:#E9C46A;
+    text-shadow: black 0px 0px 0px, black 0px 1px 0px, black 0px 0px 0px;
+}
+
+.bunga1 {
+    width: 180px;
+    position: absolute;
+    margin-top: -320px;
+}
+
+.pemberkatan {
+    width: 90%;
+    height: 720px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 30px;
+}
+
+.cincin {
+    width: 90px;
+    height: 128px;
+    animation: spin-y 6s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes spin-y {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.resepsi {
+    width: 90%;
+    height: 720px;
+    margin: auto;
+    text-align: center;
+}
+
+.Champagne {
+    width: 90px;
+    height: 128px;
+    animation: cheers 2s ease-in-out infinite alternate;
+    transform-origin: bottom center;
+}
+
+@keyframes cheers {
+    0% {
+        transform: rotate(-10deg) translateY(0);
+    }
+    20% {
+        transform: rotate(0deg) translateY(-10px);
+    }
+    40% {
+        transform: rotate(10deg) translateY(0);
+    }
+    60% {
+        transform: rotate(0deg) translateY(-10px);
+    }
+    100% {
+        transform: rotate(-10deg) translateY(0);
+    }
+}
+
+.flower1 {
+    width: 105px;
+    height: 140px;
+    position: absolute;
+    right: 26px;
+    top: 4140px;
+}
+
+.flower2 {
+    width: 110px;
+    height: 180px;
+    position: absolute;
+    left: 26px;
+    top: 4290px;
+}
+
+.flower3 {
+    width: 180px;
+    height: 202px;
+    position: absolute;
+    right: -10px;
+    top: 4340px;
+}
+
+.profile {
+    width: 90%;
+    height: 1280px;
+    margin: auto;
+    text-align: center;
+}
+
+.profile-hendrico {
+    width: 240px;
+    margin-bottom: -50px;
+}
+
+.profile-devy {
+    width: 240px;
+    padding-top: 120px;
+    margin-bottom: -50px;
+}
+
+.gallery {
+    width: 90%;
+    height: 720px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.gallery-end {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-end img {
+    max-width: 90%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.rekening-container {
+    width: 90%;
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    align-items: center;
+    background-color: #E9C46A;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.rekening1,
+.rekening2 {
+    width: 100%;
+    text-align: center;
+}
+
+.bank-logo {
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+    margin-bottom: -50px;
+}
+
+.norek {
+    width: 60%;
+    height: 30px;
+    margin: auto;
+    align-content: center;
+}
+
+.maps {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #153b65;
+}

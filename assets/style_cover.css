@@ -1,0 +1,17 @@
+body
+{
+    
+}
+
+
+.content1{
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+}
+
+.content2{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
