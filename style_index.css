@@ -31,7 +31,7 @@ body {
     color: #E9C46A;
     margin-top: 20px;
     animation: fadeIn 1.5s ease-in-out;
-    text-shadow: black 0px 0px 10px, black 0px 0px 20px, black 0px 0px 30px;
+    text-shadow: black 0px 0px 2px, black 0px 0px 10px, black 0px 0px 10px;
 }
 
 .envelope-wrapper {
@@ -45,8 +45,9 @@ body {
     perspective: 1200px;
     transform-origin: center;
     transition: transform 1s ease;
-    box-shadow: 0 20px 40px rgba(0, 0.8, 0, 0.9);
+    box-shadow: 0 20px 20px rgba(0, 0.5, 0, 0.5);
 }
+
 
 .envelope-wrapper.open {
     animation: zoomIn 1.5s forwards ease-in-out;
@@ -119,7 +120,7 @@ body {
     opacity: 0;
     transform: translateY(0);
     transition: opacity 0.5s ease, transform 1s ease;
-    z-index: -1;
+    z-index: 0;
     display: flex;
     font-size: 10px;
     justify-content: center;
@@ -145,6 +146,40 @@ body {
 .container {
     background-color: wheat;
     width: 100%;
+}
+
+.welcome-gallery{
+    width: 90%;
+    height: 320px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wg1{
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/G1.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
+}
+
+.wg2{
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/G2.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -150px;
 }
 
 .opening{
@@ -243,7 +278,7 @@ body {
     height: 140px;
     position: absolute;
     right: 26px;
-    top: 3580px;
+    top: 4140px;
 }
 
 .flower2 {
@@ -251,7 +286,7 @@ body {
     height: 180px;
     position: absolute;
     left: 26px;
-    top: 3720px;
+    top: 4290px;
 }
 
 .flower3 {
@@ -259,7 +294,7 @@ body {
     height: 202px;
     position: absolute;
     right: -10px;
-    top: 3790px;
+    top: 4340px;
 }
 
 .profile {
