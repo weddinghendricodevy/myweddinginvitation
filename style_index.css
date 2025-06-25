@@ -149,8 +149,8 @@ body {
 }
 
 .welcome-gallery{
-    width: 90%;
-    height: 320px;
+    width: 100%;
+    height: 360px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,7 +159,7 @@ body {
 .wg1{
     width: 90%;
     height: 100%;
-    background-image: url('assets/G8.jpg');
+    background-color : red;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
