@@ -157,7 +157,7 @@ body {
 }
 
 .wg1{
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-image: url('assets/G8.jpg');
     background-size: cover;
@@ -170,7 +170,7 @@ body {
 }
 
 .wg2{
-    width: 100%;
+    width: 90%;
     height: 100%;
     background-image: url('assets/G2.JPG');
     background-size: cover;
